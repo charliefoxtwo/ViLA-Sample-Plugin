@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="ViLA.PluginBase" Version="1.1.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="ViLASamplePluginConfiguration\SampleSettings.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="SampleSettings.json" />
+      <None Remove="manifest.txt" />
+      <None Remove="manifest.json" />
+      <Content Include="manifest.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
+
+</Project>
