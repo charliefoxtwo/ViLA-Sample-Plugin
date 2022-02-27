@@ -2,15 +2,12 @@
 // ReSharper disable PropertyCanBeMadeInitOnly.Global
 // ReSharper disable MemberCanBePrivate.Global
 
-namespace ViLASamplePlugin
+public class PluginConfiguration
 {
-    public class PluginConfiguration
-    {
-        public int DelayMs { get; set; }
+    public int DelayMs { get; set; }
 
-        public static PluginConfiguration Default()
-        {
-            return new() { DelayMs = 500 };
-        }
+    public static PluginConfiguration Default()
+    {
+        return new() { DelayMs = 500 };
     }
 }

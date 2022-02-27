@@ -1,15 +1,16 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net5.0</TargetFramework>
-        <AssemblyVersion>1.0.0</AssemblyVersion>
-        <FileVersion>1.0.0</FileVersion>
+        <TargetFramework>net6.0</TargetFramework>
+        <AssemblyVersion>2.0.0</AssemblyVersion>
+        <FileVersion>2.0.0</FileVersion>
         <Nullable>enable</Nullable>
+        <LangVersion>default</LangVersion>
     </PropertyGroup>
 
     <ItemGroup>
       <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
-      <PackageReference Include="ViLA.PluginBase" Version="1.1.0" />
+      <PackageReference Include="ViLA.PluginBase" Version="2.1.0" />
     </ItemGroup>
 
     <ItemGroup>
@@ -17,7 +18,6 @@
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </Content>
       <None Remove="SampleSettings.json" />
-      <None Remove="manifest.txt" />
       <None Remove="manifest.json" />
       <Content Include="manifest.json">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
